@@ -1,0 +1,99 @@
+<!--
+     Copyright (C) 2013 Andy Botting
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+
+     PS3 BD Remote Control keymap file for XBMC on Android (Ouya)
+
+     This keymap is for the PS BD Remote to be used with XBMC on Android,
+     specifically the Ouya.
+
+     This file compliments the Android keylayout file:
+
+         Vendor_054c_Product_0306.kl
+
+     Other functions are defined as standard keyboard letters, which XBMC
+     will interpret naturally. See the keylayout file for more information.
+
+     See README for installation instructions
+
+
+     Button Mappings:
+
+         ID    Button
+         ====================================
+         1     Ouya O / PS3 X (Cross)
+         2     Ouya A / PS3 Circle/Back
+         3     Ouya U / PS3 Square/View
+         4     Ouya Y / PS3 Triangle/Options
+         5     Ouya L Shoulder / L1
+         6     Ouya R Shoulder / R1
+         7     Back
+         8     Start
+         9     Ouya L Stick Button
+         10    Ouya R Stick Button
+         11    D-Pad Up
+         12    D-Pad Down
+         13    D-Pad Left
+         14    D-Pad Right
+         15    Select
+-->
+
+<keymap>
+
+  <global>
+    <joystick name="PS3 Remote Controller">
+      <button id="1">Select</button>
+      <button id="2">Back</button>
+      <button id="3">ContextMenu</button>
+      <button id="4">FullScreen</button>
+      <button id="5">Queue</button>
+      <button id="6">Playlist</button>
+      <button id="7">PreviousMenu</button>
+      <button id="8">XBMC.ActivateWindow(Home)</button>
+      <button id="9">XBMC.ActivateWindow(ShutdownMenu)</button>
+      <button id="10">XBMC.ActivateWindow(PlayerControls)</button>
+      <button id="11">Up</button>
+      <button id="12">Down</button>
+      <button id="13">Left</button>
+      <button id="14">Right</button>
+      <button id="15">ContextMenu</button>
+    </joystick>
+  </global>
+
+  <Home>
+    <joystick name="PS3 Remote Controller">
+      <button id="8">XBMC.Skin.ToggleSetting(HomeViewToggle)</button>
+    </joystick>
+  </Home>
+
+  <FullscreenVideo>
+    <joystick name="PS3 Remote Controller">
+      <button id="1">Pause</button>
+      <button id="2">Stop</button>
+      <button id="3">OSD</button>
+      <button id="5">AspectRatio</button>
+      <button id="6">ShowSubtitles</button>
+      <button id="7">SmallStepBack</button>
+      <button id="8">Info</button>
+      <button id="10">AudioNextLanguage</button>
+      <button id="11">BigStepForward</button>
+      <button id="12">BigStepBack</button>
+      <button id="13">StepBack</button>
+      <button id="14">StepForward</button>
+      <button id="15">ContextMenu</button>
+    </joystick>
+  </FullscreenVideo>
+
+</keymap>
