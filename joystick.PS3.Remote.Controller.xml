@@ -26,6 +26,12 @@
      Other functions are defined as standard keyboard letters, which XBMC
      will interpret naturally. See the keylayout file for more information.
 
+     NOTE: The configuration of this file is currently ignored. See this
+     commit for more information, which suggests only the default joystick
+     config will work:
+
+          https://github.com/xbmc/xbmc/commit/82ab1caf4ea3cb0bf397e34eed03385df1187e3d
+
      See README for installation instructions
 
 
